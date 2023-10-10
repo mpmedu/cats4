@@ -1,0 +1,822 @@
+ /* Cats2.css
+##############################################
+          General
+##############################################
+ */
+
+ * {
+   margin: 0;
+   padding: 0;
+   cursor: default;
+   box-sizing: border-box;
+ }
+
+ html,
+ body {
+   width: 100vw;
+   max-width: 100%;
+   min-width: 400px;
+   min-width: 350px;
+
+   font-size: 16px;
+   min-height: 100vh;
+   height: auto;
+
+
+   /* height:100vh; */
+
+   /* min-width: 500px;
+   min-width: 300px;
+   min-width: 400px;
+   min-width: 350px; */
+   /* min-width:100vw; */
+   /* min-height: 100%;    doesn't work */
+ }
+
+ body {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   font: 0.95em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border-left: 1px solid #aaa;
+   border-right: 1px solid #aaa;
+ }
+
+ /* needed to turn a submenu off */
+ #bodymask {
+   z-index: 5000;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ .nodisplay_important {
+   display: none !important;
+ }
+
+ .nodisplay {
+   display: none;
+ }
+
+ .yesdisplay_important {
+   display: inline-block !important;
+ }
+
+ button {
+   margin: 0.5rem;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ input,
+ body {
+   /* Prevents text from being selected */
+   -webkit-touch-callout: none;
+   /* iOS Safari */
+   -webkit-user-select: none;
+   /* Safari */
+   -khtml-user-select: none;
+   /* Konqueror HTML */
+   -moz-user-select: none;
+   /* Firefox */
+   -ms-user-select: none;
+   /* Internet Explorer/Edge */
+   user-select: none;
+   /* Non-prefixed version, currently supported by Chrome and Opera */
+ }
+
+ hr {
+   border: none;
+   height: 1px;
+   color: #888;
+   /* old IE */
+   background-color: #888;
+   /* Modern Browsers */
+ }
+
+ input[type=checkbox],
+ input[type=radio] {
+   vertical-align: middle;
+   position: relative;
+   bottom: .14em;
+ }
+
+ /* 
+Styles for message which displays while the DOM is loading
+ */
+ #eggDiv {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ccc;
+   position: absolute;
+   z-index: 8000;
+   width: 100%;
+   height: 100%;
+ }
+
+ #egg {
+   animation: changeFill 0.8s linear infinite alternate;
+ }
+
+ @keyframes changeFill {
+   0% {
+     fill: #222;
+     stroke: #000;
+     stroke-width: 10;
+   }
+
+   100% {
+     fill: #000;
+     stroke: #222;
+     stroke-width: 20;
+   }
+ }
+
+ /*    
+  the box class is needed for startupbox, myExplorer, unlockbox, creatorloginbox, getqnakeybox, adminbox, msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
+*/
+ .box {
+   border: 2px solid black;
+   position: absolute;
+   z-index: 600;
+   padding: 1em 2em;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #222;
+   -moz-box-shadow: 0px 0px 6px 3px #222;
+   -webkit-box-shadow: 0px 0px 6px 3px #222;
+   text-align: center;
+ }
+
+ /* *******************************************
+   the box and mask for messages and yesno
+******************************************* */
+ #msgbox {
+   z-index: 4000;
+   max-width: 400px;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 4px;
+   position: fixed;
+   padding: 1rem 1.5rem;
+   -webkit-box-shadow: 0px 0px 6px 3px #222;
+   -moz-box-shadow: 0px 0px 6px 3px #222;
+   box-shadow: 0px 0px 6px 3px #222;
+ }
+
+ #msgboxmask {
+   z-index: 3500;
+   top: 0;
+   left: 0;
+   position: fixed;
+   background-color: #333;
+   opacity: 0.6;
+   width: 100%;
+   height: 100%;
+ }
+
+ /* *********************************************
+   the loading spinner and its mask
+********************************************* */
+ #loading {
+   z-index: 5000;
+   position: fixed;
+ }
+
+ #loadingmask {
+   z-index: 4500;
+   top: 0;
+   left: 0;
+   position: fixed;
+   background-color: #555;
+   opacity: 0.8;
+   width: 100%;
+   height: 100%;
+ }
+
+ .flexContainer {
+   display: flex;
+   gap: 1rem;
+   justify-content: space-between;
+ }
+
+
+ /* *********************************************
+   for the context menu, ie right-clicking
+********************************************* */
+ #contextPopup,
+ #contextPopup .sub {
+   border: 1px solid #000;
+   position: fixed;
+   z-index: 700;
+   /* background-color: #ddd; */
+   background-color: #ccc;
+   color: #222;
+ }
+
+
+ #contextPopup>div,
+ #contextPopup .sub>div {
+   margin: 0.2em;
+   padding: 0.1em 0.8em;
+   font-size: 0.9rem;
+   white-space: nowrap;
+ }
+
+ #contextPopup>div:hover,
+ #contextPopup .sub>div:hover {
+   background-color: #444;
+   color: white;
+ }
+
+ .hasSub {
+  display :flex;
+  justify-content: space-between;
+  gap:2em;
+ }
+
+ #frame {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid black;
+   position: absolute;
+   z-index: 600;
+   background-color: #ddd;
+   box-shadow: 0px 0px 1px 1px #222;
+   -moz-box-shadow: 0px 0px 1px 1px #222;
+   -webkit-box-shadow: 0px 0px 1px 1px #222;
+ }
+
+ #frame img {
+   width: 60px;
+ }
+
+ #frame video {
+   width: 100px;
+ }
+
+
+ /*
+ ***************************************
+     topdiv, bottomdiv and wrapper
+ ***************************************
+  */
+
+ #topdiv {
+   flex-shrink: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* align-items: baseline; */
+   flex-wrap: wrap;
+   width: 100%;
+   z-index: 700;
+   border-bottom: 2px solid #04d;
+   min-height: 80px;
+   min-height: 70px;
+ }
+
+ #topdiv #topdivLeft,
+ #topdiv #topdivRight {
+   display: flex;
+   align-items: center;
+ }
+
+ #topdiv #topdivRight {
+   margin: 0.8rem 1rem;
+ }
+
+
+ #topdiv #profile {
+   display: flex;
+   justify-content: center;
+   /* image height is always 50px so make it 2px more to cater for border */
+   width: 52px;
+   height: 52px;
+   background-color: #222;
+   border: 1px solid #ccc;
+   margin: 6px 1.5rem;
+ }
+
+ #debug {
+   font-size: 0.3rem;
+   /* position: absolute; */
+   color: #bbb;
+   align-self: flex-start;
+ }
+
+ #topdiv #siteName {
+   color: white;
+   text-shadow: 2px 1px 0px #09f;
+   font: 48px Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   margin-top: 5px;
+ }
+
+ #topdiv #pageName {
+   text-shadow: 1px 1px 0px white;
+   font: 24px Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   color: #bbb;
+   padding: 0 10px;
+   white-space: nowrap;
+   margin-top: 20px;
+
+ }
+
+ #topmenucontainer {
+   margin: 10px 15px 0;
+ }
+
+ #topdiv #theMenu {
+   list-style: none;
+   position: relative;
+ }
+
+ #topdiv .menu {
+  background-color: #000;
+  color: #ccc;
+   font: 0.9em Cambria, sans-serif;
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+   border: 1px solid white;
+   padding: 4px 11px;
+ }
+
+ #topdiv .menu:hover,
+ #topdiv #theMenu .chosen:hover,
+ .submenu:hover,
+ .aSubmenu .chosen:hover {
+   color: #eee;
+   background-color: #04d;
+ }
+
+ /* for submenus */
+ #topdiv ul li ul {
+   padding: 0;
+   position: absolute;
+   top: 25px;
+   left: -1px;
+   width: 120px;
+   /* default width of dropdown menu */
+   -webkit-box-shadow: 0px 1px 2px 1px #555;
+   -moz-box-shadow: 0px 1px 2px 1px #555;
+   box-shadow: 0px 1px 2px 1px #555;
+   border: 1px solid #eee;
+   z-index: 3000;
+   background-color: #222;
+ }
+
+ #topdiv ul li ul li {
+   display: block;
+   float: none;
+   padding: 0.3em;
+ }
+
+ #topdiv ul li:hover ul {
+   display: block;
+ }
+
+ #topdiv #theMenu .chosen,
+ .aSubmenu .chosen {
+   background-color: #07e;
+   color: white;
+ }
+
+ #topdiv #memberPhoto {
+   /* image size is 40x40 so add the border of 1px all around = 42px */
+   width: 42px;
+   height: 42px;
+   background-color: #222;
+   border: 1px solid #ccc;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   -khtml-border-radius: 20px;
+   overflow: hidden;
+ }
+
+
+ /* ===================================================== */
+
+ #bottomdiv {
+   padding: 1px 10px;
+   border-top: 2px solid #04d;
+   position: relative;
+   z-index: 30;
+ }
+
+ /* ===================================================== */
+
+ #wrapper {
+   flex-grow: 1;
+   display: flex;
+   position: relative;
+   z-index: 30;
+ }
+
+ /* the sidebar and catlistdiv */
+ #sidebar {
+   min-width: 20%;
+   overflow: hidden;
+   border-right: 2px solid #777;
+   position: relative;
+ }
+
+
+ #sidebarMask {
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ #sidebarHeading {
+   text-align: left;
+   cursor: default;
+   margin: 0.2rem 1.5rem;
+   padding: 0.1rem 0;
+ }
+
+ #catlistdiv {
+   font-family: Arial, sans-serif;
+   line-height: 15px;
+   margin: 0 5% 10px 4%;
+   white-space: nowrap;
+ }
+
+ .subcatlistdiv {
+   margin-left: 10px;
+ }
+
+ #catlistdiv div.items {
+   margin-bottom: -1px;
+   padding: 3px 8px 3px 0px;
+ }
+
+ #catlistdiv span.indx {
+   display: inline-block;
+   width: 17px;
+   text-align: center;
+ }
+
+ #catlistdiv .itemName,
+ #catPopup {
+   font: 0.8rem Arial, sans-serif;
+   padding: 0 3px;
+   white-space: nowrap;
+ }
+
+ #catPopup {
+   position: absolute;
+   text-decoration: underline;
+   z-index: 50;
+ }
+
+ .catchosen {
+   background-color: #037 !important;
+   color: white !important;
+ }
+
+ #bin {
+   position: absolute;
+   width: 100%;
+   height: 95%;
+   background-color: rgba(35, 35, 35, 0.9);
+   color: #fff;
+   top: 30px;
+   text-align: center;
+   padding-top: 10px;
+   font-size: 0.9rem;
+ }
+
+
+ /* the showArea and its contents */
+ #showArea {
+   flex-grow: 6;
+ }
+
+
+ #content {
+   height: 100%;
+   padding: 5px;
+ }
+
+
+ #content h3 {
+   padding: 50px 30px;
+ }
+
+
+ #formDialog {
+   display: inline-block;
+   min-width: 50%;
+   border: 2px solid black;
+   position: relative;
+   z-index: 600;
+   padding: 1em 2em;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #fff;
+   -moz-box-shadow: 0px 0px 6px 3px #fff;
+   -webkit-box-shadow: 0px 0px 6px 3px #fff;
+   margin: 20px;
+ }
+
+ #formDialog .h3_m {
+   padding: 0.5rem;
+   margin: 0;
+ }
+
+ #formDialog ol {
+   margin-left: 1.5rem;
+ }
+
+ #formDialog input[type='text'],
+ #formDialog input[type='password'],
+ #formDialog input[type='file'],
+ #formDialog textarea,
+ #formDialog select {
+   width: 95%;
+   font-family: Arial, sans-serif;
+   font-size: 0.9em;
+   border: 1px solid #666;
+   padding-left: 3px;
+ }
+
+ #formDialog input[type='file'] {
+   border-width: 0;
+   padding: 0;
+ }
+
+ .inputBlock {
+   margin: 8px 12px;
+ }
+
+ input[readonly="true"] {
+   background-color: #ffd;
+ }
+
+ #formDialog textarea {
+   margin: 0;
+ }
+
+ /* needed in formDialog for moving a category */
+ #formDialog .notActiveInput {
+   background-color: #ddd !important;
+ }
+
+ #formDialog #editButtons {
+   margin-top: 10px;
+   text-align: center;
+ }
+
+ #formDialog #radio span {
+   padding-left: 3px;
+   padding-right: 12px;
+ }
+
+ /* ****************************************
+          for display of checkboxes for viewChannels
+**************************************** */
+
+ #allowChannels {
+   display: inline-block;
+   border: 1px solid #444;
+ }
+
+ .levelName {
+   display: inline-block;
+   width: 100px;
+   padding: 2px 6px;
+ }
+
+ #channelsHeading .viewCheckbox {
+   margin-left: 3px;
+ }
+
+ .viewCheckbox {
+   display: inline-block;
+   padding-right: 6px;
+ }
+
+ .viewCheckbox span {
+   display: inline-block;
+   width: 18px;
+ }
+
+ .viewCheckbox input[type=checkbox] {
+   width: 18px;
+ }
+
+
+ /* ****************************************
+          for display of photos, videos etc
+**************************************** */
+
+ #showBox {
+   border: 2px solid black;
+   position: fixed;
+   z-index: 800;
+   padding: 1rem 2rem;
+   padding: 1rem 0;
+   padding: 0.5rem 0;
+   padding: 0 0;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #fff;
+   -moz-box-shadow: 0px 0px 6px 3px #fff;
+   -webkit-box-shadow: 0px 0px 6px 3px #fff;
+ }
+
+ /* mask to cover the whole viewport */
+ #showBoxMask {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 750;
+ }
+ 
+
+ #closeButton {
+   position: absolute;
+   z-index: 5;
+   border: 1px solid #fff;
+   height: 27px;
+   background-color: #fff;
+   right: -10px;
+   top: -10px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   -khtml-border-radius: 5px;
+ }
+
+
+ .thumbPhoto {
+   height: 181px;
+   width: 130px;
+   padding: 3px;
+   background-color: #444;
+   color: #fff;
+   border: 1px solid white;
+   margin: 5px;
+   float: left;
+   text-align: center;
+   overflow: hidden;
+ }
+
+ .itemTitle {
+   padding: 3px;
+   font-weight: 400;
+   height: 22px;
+   white-space: nowrap;
+ }
+
+ #itemContainer {
+   display: flex;
+   justify-content: center;
+   padding: 0 5px 5px;
+ }
+
+ .itemHolder {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+
+ .itemHolder img {
+   border: 1px solid black;
+ }
+
+ /* .itemHolder video {
+   width: 100%
+ } */
+
+
+ .thumbVideo {
+   position: relative;
+   background-color: #444;
+   color:#fff;
+   border: 1px solid white;
+   margin: 5px;
+   float: left;
+   text-align: center;
+   overflow: hidden;
+   width: 160px;
+   height: 120px;
+ }
+
+ .thumbVideo video {
+   width: 150px;
+   height: 100px;
+ }
+
+ .thumbVideo img {
+   position: absolute;
+   left: 51px;
+   top: 40px;
+   z-index: 10;
+ }
+
+
+ .listBlog,
+ .listFile {
+   background-color: #444;
+   color:#fff;
+   border: 1px solid #ddd;
+   margin: 5px;
+   float: left;
+   width: 240px;
+   height: 50px;
+   overflow: hidden;
+   font-size: medium;
+ }
+
+ .listBlog .itemTitle,
+ .listFile .itemTitle {
+   white-space: pre-wrap;
+ }
+
+ .listBlog .itemTitle span,
+ .listFile .itemTitle span {
+   font-weight: 200;
+   font-size: small;
+ }
+
+ #itemContainer object {
+   width: 82vw;
+   height: 93vh;
+ }
+
+
+ #startup {
+   padding: 20px;
+ }
+
+
+
+ :root {
+   --light-grey: #eee;
+   --ff-my-grey: var(--light-grey);
+ }
+
+ @media (max-width:500px) {
+
+   /* #topdiv {
+     background-color: red;
+     color:var(--ff-my-grey);
+   } */
+
+   html,
+   body {
+     font-size: 20px;
+   }
+
+   #wrapper {
+     flex-direction: column;
+   }
+
+   #sidebar {
+     border-bottom: 1px solid #aaa;
+   }
+
+   #showArea {
+     display: flex;
+   }
+
+   #sidebarHeading {
+     margin: 0.2rem 7.5%;
+   }
+
+   #topdiv #topdivRight {
+     margin-bottom: 10px;
+     margin-top: 5px;
+   }
+
+
+ }
+
+ @media screen and (orientation:portrait) {
+   body {
+     height: 100vh;
+     width: 100vw;
+   }
+ }
+
+ @media screen and (orientation:landscape) {
+   body {
+     height: 100vh;
+     width: 100vw;
+   }
+ }

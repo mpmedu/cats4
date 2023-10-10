@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/lib_bak": true,
+    "/lib_bak/css/*.*": true,
+    "lib_bak": true
+  },
+  "files.exclude": {
+    "**/lib_bak": true
+  }
+}

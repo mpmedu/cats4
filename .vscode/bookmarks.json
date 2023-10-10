@@ -1,0 +1,184 @@
+{
+	"files": [
+		{
+			"path": "lib/css/cats4.css",
+			"bookmarks": [
+				{
+					"line": 271,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 418,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 520,
+					"column": 8,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/myapp.js",
+			"bookmarks": [
+				{
+					"line": 198,
+					"column": 14,
+					"label": "setState"
+				},
+				{
+					"line": 285,
+					"column": 10,
+					"label": "catClass"
+				},
+				{
+					"line": 771,
+					"column": 15,
+					"label": "showFormDialog"
+				},
+				{
+					"line": 896,
+					"column": 16,
+					"label": "fillInInput"
+				},
+				{
+					"line": 1122,
+					"column": 14,
+					"label": "itemEditClass"
+				},
+				{
+					"line": 1402,
+					"column": 13,
+					"label": "membersClass"
+				},
+				{
+					"line": 1557,
+					"column": 15,
+					"label": "getFiles"
+				},
+				{
+					"line": 1764,
+					"column": 18,
+					"label": "getAndShowContent"
+				},
+				{
+					"line": 2008,
+					"column": 15,
+					"label": "ownerLogin"
+				}
+			]
+		},
+		{
+			"path": "lib/js/handlers.js",
+			"bookmarks": [
+				{
+					"line": 28,
+					"column": 11,
+					"label": "topmenu"
+				},
+				{
+					"line": 78,
+					"column": 14,
+					"label": "catPopup"
+				},
+				{
+					"line": 98,
+					"column": 9,
+					"label": "sidebar"
+				},
+				{
+					"line": 250,
+					"column": 14,
+					"label": "formDialog"
+				},
+				{
+					"line": 453,
+					"column": 17,
+					"label": "contextmenu"
+				},
+				{
+					"line": 570,
+					"column": 11,
+					"label": "contextPopup"
+				},
+				{
+					"line": 646,
+					"column": 15,
+					"label": "keydown"
+				}
+			]
+		},
+		{
+			"path": "lib/php/iDocsClass.php",
+			"bookmarks": [
+				{
+					"line": 112,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 848,
+					"column": 21,
+					"label": "makemarrays"
+				},
+				{
+					"line": 950,
+					"column": 20,
+					"label": "addItems"
+				},
+				{
+					"line": 1585,
+					"column": 7,
+					"label": "addMember"
+				},
+				{
+					"line": 1777,
+					"column": 15,
+					"label": "changeOwnersInfo"
+				},
+				{
+					"line": 1856,
+					"column": 22,
+					"label": "changeMembersInfo"
+				},
+				{
+					"line": 2130,
+					"column": 16,
+					"label": "end of IDocsClass"
+				},
+				{
+					"line": 618,
+					"column": 1,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/myappmeta.js",
+			"bookmarks": [
+				{
+					"line": 65,
+					"column": 1,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/common2Cats3.js",
+			"bookmarks": [
+				{
+					"line": 306,
+					"column": 6,
+					"label": "showMessage"
+				},
+				{
+					"line": 580,
+					"column": 27,
+					"label": "showContextPopup"
+				}
+			]
+		}
+	]
+}
