@@ -9,12 +9,12 @@
 					"label": ""
 				},
 				{
-					"line": 418,
+					"line": 417,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 520,
+					"line": 519,
 					"column": 8,
 					"label": ""
 				}
@@ -24,47 +24,47 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 198,
+					"line": 171,
 					"column": 14,
 					"label": "setState"
 				},
 				{
-					"line": 285,
+					"line": 258,
 					"column": 10,
 					"label": "catClass"
 				},
 				{
-					"line": 771,
+					"line": 740,
 					"column": 15,
 					"label": "showFormDialog"
 				},
 				{
-					"line": 896,
+					"line": 865,
 					"column": 16,
 					"label": "fillInInput"
 				},
 				{
-					"line": 1122,
+					"line": 1090,
 					"column": 14,
 					"label": "itemEditClass"
 				},
 				{
-					"line": 1402,
+					"line": 1370,
 					"column": 13,
 					"label": "membersClass"
 				},
 				{
-					"line": 1557,
+					"line": 1518,
 					"column": 15,
 					"label": "getFiles"
 				},
 				{
-					"line": 1764,
+					"line": 1725,
 					"column": 18,
 					"label": "getAndShowContent"
 				},
 				{
-					"line": 2008,
+					"line": 1968,
 					"column": 15,
 					"label": "ownerLogin"
 				}
@@ -74,37 +74,37 @@
 			"path": "lib/js/handlers.js",
 			"bookmarks": [
 				{
-					"line": 28,
+					"line": 30,
 					"column": 11,
 					"label": "topmenu"
 				},
 				{
-					"line": 78,
+					"line": 80,
 					"column": 14,
 					"label": "catPopup"
 				},
 				{
-					"line": 98,
+					"line": 100,
 					"column": 9,
 					"label": "sidebar"
 				},
 				{
-					"line": 250,
+					"line": 252,
 					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 453,
+					"line": 455,
 					"column": 17,
 					"label": "contextmenu"
 				},
 				{
-					"line": 570,
+					"line": 572,
 					"column": 11,
 					"label": "contextPopup"
 				},
 				{
-					"line": 646,
+					"line": 648,
 					"column": 15,
 					"label": "keydown"
 				}
@@ -119,37 +119,37 @@
 					"label": ""
 				},
 				{
-					"line": 848,
+					"line": 723,
 					"column": 21,
 					"label": "makemarrays"
 				},
 				{
-					"line": 950,
+					"line": 824,
 					"column": 20,
 					"label": "addItems"
 				},
 				{
-					"line": 1585,
+					"line": 1461,
 					"column": 7,
 					"label": "addMember"
 				},
 				{
-					"line": 1777,
+					"line": 1785,
 					"column": 15,
 					"label": "changeOwnersInfo"
 				},
 				{
-					"line": 1856,
+					"line": 1866,
 					"column": 22,
 					"label": "changeMembersInfo"
 				},
 				{
-					"line": 2130,
+					"line": 2148,
 					"column": 16,
 					"label": "end of IDocsClass"
 				},
 				{
-					"line": 618,
+					"line": 493,
 					"column": 1,
 					"label": ""
 				}

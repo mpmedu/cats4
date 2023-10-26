@@ -116,7 +116,7 @@ Styles for message which displays while the DOM is loading
    justify-content: center;
    background-color: #ccc;
    position: absolute;
-   z-index: 8000;
+   z-index: 6000;
    width: 100%;
    height: 100%;
  }
@@ -158,7 +158,7 @@ Styles for message which displays while the DOM is loading
    the box and mask for messages and yesno
 ******************************************* */
  #msgbox {
-   z-index: 4000;
+   z-index: 7000;
    max-width: 400px;
    text-align: center;
    border: 2px solid black;
@@ -171,7 +171,7 @@ Styles for message which displays while the DOM is loading
  }
 
  #msgboxmask {
-   z-index: 3500;
+   z-index: 6500;
    top: 0;
    left: 0;
    position: fixed;
@@ -185,12 +185,12 @@ Styles for message which displays while the DOM is loading
    the loading spinner and its mask
 ********************************************* */
  #loading {
-   z-index: 5000;
+   z-index: 8000;
    position: fixed;
  }
 
  #loadingmask {
-   z-index: 4500;
+   z-index: 7500;
    top: 0;
    left: 0;
    position: fixed;
@@ -305,12 +305,11 @@ Styles for message which displays while the DOM is loading
    margin: 6px 1.5rem;
  }
 
- #debug {
+ /* #debug {
    font-size: 0.3rem;
-   /* position: absolute; */
    color: #bbb;
    align-self: flex-start;
- }
+ } */
 
  #topdiv #siteName {
    color: white;
@@ -483,7 +482,7 @@ Styles for message which displays while the DOM is loading
    z-index: 50;
  }
 
- .catchosen {
+ .catChosen {
    background-color: #037 !important;
    color: white !important;
  }
